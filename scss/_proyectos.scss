@@ -1,0 +1,48 @@
+/*--------------- PAGE PROYECTOS SECTION---------------*/
+
+.cardsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "card1 card2"
+      "card1 card3";
+    grid-template-columns: auto 30%;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 6px;
+    grid-gap: 6px;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .card1 {
+    grid-area: card1;
+    height: 100%;
+    border-radius: 50px;
+  }
+  
+  .card2 {
+    grid-area: card2;
+    height: 100%;
+    border-radius: 50px;
+  }
+  
+  .card3 {
+    grid-area: card3;
+    height: 100%;
+    border-radius: 50px;
+  }
+  
+  .proyec-head {
+    background-color: black;
+    padding: 1rem;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-family: "Mulish";
+    font-size: 50px;
+  }

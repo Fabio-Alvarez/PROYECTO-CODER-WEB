@@ -1,0 +1,29 @@
+
+//MIXIN GRADIANTE
+$color1:#3E5151;
+$color2:#DECBA4;
+
+$list1: $color1, $color2; 
+
+$list2: $color1 0%,$color1 16%,$color2 80%,$color2 10%; 
+
+$list3: $color1 50%,$color1 60%,$color2 25%,$color2 39%; 
+
+@mixin gradient($direction, $list) { 
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);  
+  }
+
+  .one {
+    @include gradient(left, $list1);
+  }
+  
+  .two {
+    @include gradient(right, $list2);
+  }
+  
+  .three {
+    @include gradient(left, $list3);
+  }

@@ -1,0 +1,15 @@
+
+@keyframes move {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0%;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 100%;
+    }
+  }
+  .animation1 {
+    animation-duration: 1s;
+    animation-name: move;
+  }
